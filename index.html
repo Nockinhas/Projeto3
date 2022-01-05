@@ -4,49 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script src="js/parallax effect.js"></script>
 </head>
 <body>
-    <div class="space"></div>
-
-    <div class="header">
-        <nav class="navbar">
-            <a class="brand" href="index.html">Crimes Exemplares</a>
-            <a class="home" href="map.html">Mapa</a>
-        </nav>
-
-        <div class="scrollmenu">
-            <a href="stories.html">1.</a>
-            <a href="stories.html">2.</a>
-            <a href="stories.html">3.</a>
-            <a href="stories.html">4.</a>
-            <a href="stories.html">5.</a>
-            <a href="stories.html">6.</a>
-            <a href="stories.html">7.</a>  
-            <a href="stories.html">8.</a>
-            <a href="stories.html">9.</a>
-            <a href="stories.html">10.</a>
-            <a href="stories.html">11.</a>
-            <a href="stories.html">12.</a>
-            <a href="stories.html">13.</a>
-            <a href="stories.html">14.</a>
-            <a href="stories.html">15.</a>
-            <a href="stories.html">16.</a>
-            <a href="stories.html">17.</a>
-            <a href="stories.html">18.</a>
-            <a href="stories.html">19.</a>
-            <a href="stories.html">20.</a>
-            <a href="stories.html">22.</a>
-            <a href="stories.html">23.</a>
-        </div>
+    <div class="section">
+        <h1>Scroll down</h1>
     </div>
-
-      <div class="inicio">
-          <div class="bg"></div>
-          <div>
-              
-          </div>
-      </div>
+    <div class='icon-scroll'></div>
+        <div class="section bg1">
+            <h1 class="revealUp">Sou barbeiro...</h1>
+        </div>
+    <img id="barbeiro" src="imagens/barbeiro1.png" height="1000px">
+    <div id="imageText1" class="hide">
+        <h1>Um bom barbeiro!</h1>
+        <h1>Um bom barbeiro!</h1>
+        <h1>Um bom barbeiro!</h1>
+        <h1>Um bom barbeiro!</h1>
+        <h1>Um bom barbeiro!</h1>
+        <h1>Um bom barbeiro!</h1>
+        <h1>Um bom barbeiro!</h1>
+        <h1>...</h1>
+    </div>
+    <script>
+        var image = document.getElementById("barbeiro");
+        image.addEventListener('mouseover', function(){
+        image.src = "imagens/barbeiro.gif"
+        document.getElementById("imageText1").className='show';
+        })
+        image.addEventListener('mouseout', function(){
+            image.src = "imagens/barbeiro1.png"
+            document.getElementById("imageText1").className='hide';
+        })
+    </script>
+    <div class="section bg1">
+        <h1 class="revealUp">Cada qual tem as suas manias,<br>
+             eu não gosto de borbulhas.</h1>
+    </div>
+    <img id="borbulha" src="imagens/pimple1.png" height="100px">
+    <script>
+        var image2 = document.getElementById("borbulha");
+        image2.addEventListener('mouseover', function(){
+        image2.src = "imagens/pimple.gif"
+        })
+        image2.addEventListener('mouseout', function(){
+            image2.src = "imagens/pimple1.png"
+        })
+    </script>
+     <div class="section bg1">
+        <h1 class="revealUp">Comecei a barbeá-lo calmamente… nunca cortei ninguém.</h1>
+    </div>
+    <div class="section bg1">
+        <h1 class="revealUp">Nas suas borbulhas não havia nada de especial.</h1>
+    </div>
+    <img id="navalha" src="imagens/navalha1.png">
+    <script>
+        var image3 = document.getElementById("navalha");
+        image3.addEventListener('mouseover', function(){
+        image3.src = "imagens/navalha.gif"
+        })
+        image3.addEventListener('mouseout', function(){
+            image3.src = "imagens/navalha1.png"
+        })
+    </script>
+    <div class="section bg1" style="top: 500px;">
+        <h1 class="revealUp">A primeira, contornei-a bem, a segunda começou a sangrar.</h1>
+    </div>
+    <div class="section bg1">
+        <h1 class="revealUp">Sem poder deixar de o fazer.</h1>
+    </div>
+    <div class="section bg1">
+        <h1 class="revealUp">Cortei-lhe a cabeça.</h1>
+    </div>
+    <section class="animation">
+        <img class="head" src="imagens/head.png" alt="cabeça" height="150px">
+    </section>
+    <a href="parallax1.html" style="text-decoration: none;"><button class="button">Parallax</button></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/button.js"></script>
 </body>
 </html>
+

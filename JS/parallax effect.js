@@ -22,6 +22,7 @@ function castParallax() {
 				}
 
 		}
+		
 	/* var layers = document.getElementsByClassName("parallaxX");
 		var layer, speed, xPos;
 		for (var i = 0; i < layers.length; i++) {
