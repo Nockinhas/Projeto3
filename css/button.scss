@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.map {
+    background-size: 100vw;
+    background-image: url("../imagens/mapa.jpg");
+}
+
 .button {
     --background: #2d2e30;
     --text: #fff;
@@ -49,3 +60,7 @@
         text-shadow: var(--shadow-active);
     }
 }
+
+
+@import "header";
+@import "cabeçaBarbeiro";

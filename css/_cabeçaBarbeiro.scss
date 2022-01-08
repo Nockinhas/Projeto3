@@ -1,0 +1,14 @@
+
+.animation {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.cabeca {
+    position: absolute;
+    height: 100px;
+    top: 50%;
+    left: 0%;
+    z-index: 1;
+}
