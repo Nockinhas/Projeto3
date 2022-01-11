@@ -11,6 +11,10 @@
 </head>
 <body>
 
+    <audio id="myAudio">
+        <source src="som/Casa.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="header">
         <nav class="navbar">
             <a class="brand" href="index.html">Crimes Exemplares</a>
@@ -26,6 +30,16 @@
             <a href="#story6">6.</a>
             <a href="#story7">7.</a>  
             <a href="#story8">8.</a>
+            <a>
+                <label class="volume" onClick="togglePlay()">
+                    <input type="checkbox">
+                    <svg viewBox="0 0 108 96">
+                        <path d="M7,28 L35,28 L35,28 L59,8 L59,88 L35,68 L7,68 C4.790861,68 3,66.209139 3,64 L3,32 C3,29.790861 4.790861,28 7,28 Z"></path>
+                        <path d="M79,62 C83,57.3333333 85,52.6666667 85,48 C85,43.3333333 83,38.6666667 79,34 L49,3"></path>
+                        <path d="M95,69 C101.666667,61.6666667 105,54.3333333 105,47 C105,39.6666667 101.666667,32.3333333 95,25 L75.5,6 L49,33"></path>
+                    </svg>
+                </label>
+            </a>
         </div>
     </div>
 
@@ -402,6 +416,7 @@
     <a href="parallax4.html" style="text-decoration: none;"><button class="button">Parallax</button></a>
     <br>
 
+    <script src="js/audio.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" integrity="sha512-kDuUo39RGApdfHkM1WQL8Pg9BYtYGS5rD14AzePsD4SEaixw7v/ykAkLMdsSjuBCNFE6/FAP+WIHh6N6QZJl5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js" integrity="sha512-hFyYiBIWCYSyo98oFGWjG5V8HEV4g5O2pxu0mzU8qIMC7lrrwtcKWoRDZcpRL0ywIIM2d/XsBJ9iXNLFf6kIgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js" integrity="sha512-7nSmgdAZ7oPdT5aa2a4YauI8Y1xgaj6zZtQo9+EIEhpcNEiRHPAtyTKYckBQ0lmg1xQKrdWweHBcN/D0tdnvCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
