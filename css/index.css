@@ -109,7 +109,7 @@ body {
 }
 
 /* parallax1 */
-.keyart1, .keyart_layer {
+.keyart1, .keyart_layer1 {
 	height: 1400px;
 }
 /* parallax2*/
@@ -123,7 +123,7 @@ body {
 	position: relative;
 	z-index: 10;
 }
-.keyart_layer {
+.keyart_layer, .keyart_layer1  {
 	background-position: bottom center;
 	background-size: cover;
 	width: 100%;
