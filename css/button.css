@@ -181,12 +181,6 @@
   z-index: 1;
 }
 
-.som {
-  padding: 20px;
-  margin-right: 20px;
-  float: right;
-  display: inline-block;
-}
 .som .volume {
   --line: #fff;
   --line-width: 6px;
@@ -197,8 +191,6 @@
 }
 .som .volume input {
   display: none;
-  padding: 15px;
-  margin-left: 15px;
 }
 .som .volume input + svg {
   display: block;

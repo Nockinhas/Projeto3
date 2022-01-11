@@ -1,8 +1,4 @@
 .som{
-    padding: 20px;
-    margin-right: 20px;
-    float: right;
-    display: inline-block;
     .volume {
         --line: #fff;
         --line-width: 6px;
@@ -12,8 +8,6 @@
         -webkit-tap-highlight-color: transparent;
         input {
             display: none;
-            padding: 15px;
-            margin-left: 15px;
             & + svg {
                 display: block;
                 fill: none;
