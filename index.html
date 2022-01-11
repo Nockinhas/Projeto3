@@ -133,21 +133,6 @@
     <div class="section bg1" id="story2">
         <h1 class="revealUp">Sou costureiro...</h1>
     </div>
-    <div id="imageText2" class="hide">
-        <h1>O melhor costureiro do país.</h1>
-    </div>
-    <img id="costureiroGIF" src="imagens/costureiro.png">
-    <script>
-        var image4 = document.getElementById("costureiroGIF");
-        image4.addEventListener('mouseover', function(){
-        image4.src = "imagens/costureiro.gif"
-        document.getElementById("imageText2").className='show';
-        })
-        image4.addEventListener('mouseout', function(){
-            image4.src = "imagens/costureiro.png"
-            document.getElementById("imageText2").className='hide';
-        })
-    </script>
     <div class="section bg1">
         <h1 class="revealUp">Não é para me gabar, mas</h1>
     </div>
@@ -155,7 +140,16 @@
     <div class="section bg1">
         <h1 class="revealUp">sou o melhor costureiro do país.</h1>
     </div>
-
+    <img id="costureiroGIF" src="imagens/costureiro.png" style="top: -400px;">
+    <script>
+        var image4 = document.getElementById("costureiroGIF");
+        image4.addEventListener('mouseover', function(){
+        image4.src = "imagens/costureiro.gif"
+        })
+        image4.addEventListener('mouseout', function(){
+            image4.src = "imagens/costureiro.png"
+        })
+    </script>
     <div class="section bg1">
         <h1 class="revealUp">Essa mulher</h1>
     </div>
