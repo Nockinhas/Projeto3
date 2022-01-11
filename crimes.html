@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/button.css">
+
+    <title>Crimes Exemplares</title>
+</head>
+<body>
+
+    <audio id="myAudio">
+        <source src="som/Casa.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="header">
+        <nav class="navbar">
+            <a class="brand" href="index.html">Crimes Exemplares</a>
+            <a class="home">
+                <!-- SOM -->
+            
+                <div class="som">
+                    <label class="volume" onClick="togglePlay()">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 108 96">
+                            <path d="M7,28 L35,28 L35,28 L59,8 L59,88 L35,68 L7,68 C4.790861,68 3,66.209139 3,64 L3,32 C3,29.790861 4.790861,28 7,28 Z"></path>
+                            <path d="M79,62 C83,57.3333333 85,52.6666667 85,48 C85,43.3333333 83,38.6666667 79,34 L49,3"></path>
+                            <path d="M95,69 C101.666667,61.6666667 105,54.3333333 105,47 C105,39.6666667 101.666667,32.3333333 95,25 L75.5,6 L49,33"></path>
+                        </svg>
+                    </label>
+                </div>
+            </a>
+        </nav>
+
+        <div class="scrollmenu">
+            <a href="#story1">1.</a>
+            <a href="#story2">2.</a>
+            <a href="#story3">3.</a>
+            <a href="#story4">4.</a>
+            <a href="#story5">5.</a>
+            <a href="#story6">6.</a>
+            <a href="#story7">7.</a>  
+            <a href="#story8">8.</a>
+        </div>
+    </div>
+
+    <!-- SCROLLDOWN -->
+
+    <div class="section">
+        <h1>Dá scroll e <br> aproxima-te das imagens</h1>
+    </div>
+    <div class='icon-scroll'></div>
+
+
+    <!-- HISTORIA 1 -->
+
+    <div class="section bg1" id="story1">
+        <h1 class="revealUp">Sou barbeiro...</h1>
+    </div>
+    <img id="barbeiro" src="imagens/barbeiro1.png" height="1000px">
+    <div id="imageText1" class="hide">
+        <h1>Um bom barbeiro!</h1>
+        <h1>Um bom barbeiro!</h1>
+        <h1>Um bom barbeiro!</h1>
+        <h1>Um bom barbeiro!</h1>
+        <h1>Um bom barbeiro!</h1>
+        <h1>Um bom barbeiro!</h1>
+        <h1>Um bom barbeiro!</h1>
+        <h1>...</h1>
+    </div>
+    <script>
+        var image = document.getElementById("barbeiro");
+        image.addEventListener('mouseover', function(){
+        image.src = "imagens/barbeiro.gif"
+        document.getElementById("imageText1").className='show';
+        })
+        image.addEventListener('mouseout', function(){
+            image.src = "imagens/barbeiro1.png"
+            document.getElementById("imageText1").className='hide';
+        })
+    </script>
+    <div class="section bg1">
+        <h1 class="revealUp">Cada qual tem as suas manias,<br>
+             eu não gosto de borbulhas.</h1>
+    </div>
+    <img id="borbulha" src="imagens/pimple1.png" height="100px">
+    <script>
+        var image2 = document.getElementById("borbulha");
+        image2.addEventListener('mouseover', function(){
+        image2.src = "imagens/pimple.gif"
+        })
+        image2.addEventListener('mouseout', function(){
+            image2.src = "imagens/pimple1.png"
+        })
+    </script>
+     <div class="section bg1">
+        <h1 class="revealUp">Comecei a barbeá-lo calmamente… nunca cortei ninguém.</h1>
+    </div>
+    <div class="section bg1">
+        <h1 class="revealUp">Nas suas borbulhas não havia nada de especial.</h1>
+    </div>
+    <img id="navalha" src="imagens/navalha1.png">
+    <script>
+        var image3 = document.getElementById("navalha");
+        image3.addEventListener('mouseover', function(){
+        image3.src = "imagens/navalha.gif"
+        })
+        image3.addEventListener('mouseout', function(){
+            image3.src = "imagens/navalha1.png"
+        })
+    </script>
+    <div class="section bg1" style="top: 500px;">
+        <h1 class="revealUp">A primeira, contornei-a bem, a segunda começou a sangrar.</h1>
+    </div>
+    <div class="section bg1">
+        <h1 class="revealUp">Sem poder deixar de o fazer.</h1>
+    </div>
+    <div class="section bg1">
+        <h1 class="revealUp">Cortei-lhe a cabeça.</h1>
+    </div>
+
+    <section class="animation">
+        <img class="cabeca" src="imagens/head.png" alt="cabeça">
+    </section>
+
+    <a href="parallax1.html" style="text-decoration: none;"><button class="button">Parallax</button></a>
+    <br>
+
+    <!-- HISTORIA 2 -->
+
+    <div class="section bg1" id="story2">
+        <h1 class="revealUp">Sou costureiro...</h1>
+    </div>
+    <div class="section bg1">
+        <h1 class="revealUp">Não é para me gabar, mas</h1>
+    </div>
+
+    <div class="section bg1">
+        <h1 class="revealUp">sou o melhor costureiro do país.</h1>
+    </div>
+    <img id="costureiroGIF" src="imagens/costureiro.png" style="top: -400px;">
+    <script>
+        var image4 = document.getElementById("costureiroGIF");
+        image4.addEventListener('mouseover', function(){
+        image4.src = "imagens/costureiro.gif"
+        })
+        image4.addEventListener('mouseout', function(){
+            image4.src = "imagens/costureiro.png"
+        })
+    </script>
+    <div class="section bg1">
+        <h1 class="revealUp">Essa mulher</h1>
+    </div>
+
+    <div class="section bg1">
+        <h1 class="revealUp"> fez do casaco comprido um simples casaco, <br> como se ele fosse sua propriedade</h1><br>
+    </div>
+
+    <div class="section bg1">
+        <h1 class="revealUp">amarrei-lhe o véu à roda do automóvel.</h1>
+    </div>
+
+    <div class="section bg1">
+        <h1 class="revealUp">O arranque fez o resto.</h1>
+    </div>
+
+    <a href="parallax8.html" style="text-decoration: none;"><button class="button">Parallax</button></a>
+    <br>
+    
+
+    <!-- HISTORIA 3 -->
+
+    
+    <div class="section bg1" id="story3">
+        <h1 class="revealUp"> Sim, era o meu melhor amigo,</h1>
+    </div>
+    
+    <div class="section bg1">
+        <h1 class="revealUp"> e eu também era o seu melhor amigo.</h1>
+    </div>
+    
+    <div class="section bg1">
+        <h1 class="revealUp">Mas...já não conseguia suportá-lo:</h1>
+    </div>
+
+    <div class="section bg1">
+        <h1 class="revealUp">adivinhava tudo o que eu podia pensar.</h1>
+    </div>
+
+    <div class="section bg1">
+        <h1 class="revealUp">...chegava mesmo a dizer-me tudo</h1>
+    </div>
+
+    <div class="section bg1">
+        <h1 class="revealUp">penetrar... nos meus pensamentos.</h1>
+    </div>
+
+    <div class="section bg1">
+        <h1 class="revealUp">provavelmente deixei o corpo demasiado perto da estrada.</h1>
+    </div>
+    <img id="fantasmaGIF" src="imagens/fantasma.png" style="top: -400px;">
+    <script>
+        var image4 = document.getElementById("fantasmaGIF");
+        image4.addEventListener('mouseover', function(){
+        image4.src = "imagens/fantasma.gif"
+        })
+        image4.addEventListener('mouseout', function(){
+            image4.src = "imagens/fantasma.png"
+        })
+    </script>
+
+    <a href="parallax2.html" style="text-decoration: none;"><button class="button">Parallax</button></a>
+    <br>
+
+    <!-- HISTORIA 4 -->
+
+    <div class="section bg1" id="story4">
+        <h1 class="revealUp">Era mais inteligente do que eu, mais rico</h1>
+    </div>
+
+    <div class="section bg1">
+        <h1 class="revealUp">mais generoso...mais alto...</h1>
+    </div>
+
+    <div class="section bg1">
+        <h1 class="revealUp">mais bonito do que eu, mais esperto do que eu;<br> vestia melhor, falava melhor.</h1>
+    </div>
+    
+    <div class="section bg1">
+        <h1 class="revealUp"> pensei na maneira de me ver livre dele,</h1>
+    </div>
+    
+    <div class="section bg1">
+        <h1 class="revealUp">mas fiz mal em envenená-lo:</h1>
+    </div>
+    
+    <div class="section bg1">
+        <h1 class="revealUp">sofreu demais.</h1>
+    </div> 
+
+    <a href="parallax5.html" style="text-decoration: none;"><button class="button">Parallax</button></a>
+    <br>
+
+    <!-- HISTORIA 5 -->
+    
+    <div class="section bg1" id="story5">
+        <h1 class="revealUp">Se não durmo pelo menos oito horas sou um homem perdido, <br> e tinha que me levantar às sete...</h1>
+    </div> 
+    
+    <div class="section bg1">
+        <h1 class="revealUp">eles não se iam embora,</h1>
+    </div> 
+    
+    <div class="section bg1">
+        <h1 class="revealUp"> Palravam como papagaios, <br>  cacarejavam sem fim,</h1>
+    </div> 
+    
+    <div class="section bg1">
+        <h1 class="revealUp"> Eu não podia mais.</h1>
+    </div> 
+    
+    <div class="section bg1">
+        <h1 class="revealUp">Não conseguia tirar da cabeça o relógio da sala, </h1>
+    </div> 
+    
+    <div class="section bg1">
+        <h1 class="revealUp">a conversa deles não me interessava <br> nem um bocadinho.</h1>
+    </div> 
+    
+    <div class="section bg1" style="top: 325px;">
+        <h1 class="revealUp">um desejo:</h1>
+    </div> 
+    
+    <div class="section bg1">
+        <h1 class="revealUp">dormir.</h1>
+    </div> 
+    
+    <div class="section bg1">
+        <h1 class="revealUp">E você, que acha? E você, e você, e você...</h1>
+    </div> 
+    
+    <div class="section bg1">
+        <h1 class="revealUp">E esse veneno tão parecido com conhaque.</h1>
+    </div> 
+
+    <a href="parallax3.html" style="text-decoration: none;"><button class="button">Parallax</button></a>
+    <br>
+
+    <!-- HISTORIA 6 -->
+
+    <div class="section bg1" id="story6">
+        <h1 class="revealUp">Introduzira-me um cubo de gelo nas costas.</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp"> O mínimo que eu podia fazer era arrefecê-lo também.</h1>
+    </div> 
+
+    <a href="parallax7.html" style="text-decoration: none;"><button class="button">Parallax</button></a>
+    <br>
+
+    <!-- HISTORIA 7 -->
+
+    <div class="section bg1" id="story7">
+        <h1 class="revealUp">O Director-Geral da União dos Autores de Cinema <br>
+                             devolveu-me amavelmente o manuscrito:
+        </h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">a Comissão de Leitura deliberou que não pode aceitar o seu argumento,</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp"> a história é idêntica a uma outra</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">submetida o mês passado, pelo senhor Júlio Ortega.</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">Não é possível!</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">Esta história aconteceu- -me a mim! <br> É minha!</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">Era uma história excelente, absolutamente original.</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">De facto, as duas histórias eram muito parecidas.</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">Mas era impossível...</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp"> A ideia era minha, só minha! <br> Tratava-se de um roubo!</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp"> disse e gritei,</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">mas não quiseram compreender.</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">...sorriam e cochichavam. Esbanjadores!</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">Revolviam-se-me as tripas.</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">Então, entrou o senhor Ortega.</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp"> Fi-lo com um corta-papéis,</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">Sangrou como um porco.</h1>
+    </div> 
+
+    <a href="parallax6.html" style="text-decoration: none;"><button class="button">Parallax</button></a>
+    <br>
+
+    <!-- HISTORIA 8 -->
+
+    <div class="section bg1" id="story8">
+        <h1 class="revealUp">Todas as manhãs e todas as tardes,</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">essa senhora ia passear o cãozinho.</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">Era uma mulher velha e feia e, claro está, <br> má.</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">Eu não tinha nada em que me ocupar <br> e gostava daquele banco,</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">daquele em especial...</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">ela fazia de propósito,</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">o cãozinho indecente <br> era o animal mais horrível que se possa imaginar:</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">cheirar reprovativamente <br> e depois fazia porcarias nas minhas barbas.</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">o animal não tinha culpa.</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">Havia uma casa em construção ali a dois passos...</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">barra de ferro à mão</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp"> Dei com ela na velha</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">Se não tivesse tropeçado e caído,</h1>
+    </div> 
+
+    <div class="section bg1">
+        <h1 class="revealUp">ninguém me teria agarrado.</h1>
+    </div> 
+
+    <a href="parallax4.html" style="text-decoration: none;"><button class="button">Parallax</button></a>
+    <br>
+
+    <script src="js/audio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js" integrity="sha512-kDuUo39RGApdfHkM1WQL8Pg9BYtYGS5rD14AzePsD4SEaixw7v/ykAkLMdsSjuBCNFE6/FAP+WIHh6N6QZJl5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js" integrity="sha512-hFyYiBIWCYSyo98oFGWjG5V8HEV4g5O2pxu0mzU8qIMC7lrrwtcKWoRDZcpRL0ywIIM2d/XsBJ9iXNLFf6kIgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js" integrity="sha512-7nSmgdAZ7oPdT5aa2a4YauI8Y1xgaj6zZtQo9+EIEhpcNEiRHPAtyTKYckBQ0lmg1xQKrdWweHBcN/D0tdnvCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js" integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js" integrity="sha512-plyexAULVlTExvDn2yUZFJV9F8q+53MC/GpU9dEuNGXmrrI3J8Rcffjvxg3OOBALBvF+UILPLIBEoCeF2maqTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/cabeçaBarbeiro.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>   
+    <script src="js/index.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/parallax effect.js"></script>
+    
+    
+</body>
+</html>
+
