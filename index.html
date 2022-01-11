@@ -45,5 +45,25 @@
         </div>
     </div>
 
+    <div>
+        <img id="CaveiraGIF" src="imagens/Caveira.png" style="width: 100vw;top: 100px;">
+        <script>
+            var imageCaveira = document.getElementById("CaveiraGIF");
+            imageCaveira.addEventListener('mouseover', function(){
+            imageCaveira.src = "imagens/Caveira.gif"
+            })
+            imageCaveira.addEventListener('mouseout', function(){
+                imageCaveira.src = "imagens/Caveira.png"
+            })
+        </script>
+    </div>
+
+    <div>
+        <a href="crimes.html" style="text-decoration: none;"><button class="button">Jogar</button></a>
+    <br>
+    </div>
+
+    <script src="js/audio.js"></script>
+    <script src="js/button.js"></script>
 </body>
 </html>
