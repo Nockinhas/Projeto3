@@ -12,6 +12,13 @@ h1 {
   position: relative;
   letter-spacing: 0.04em;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     background-color:#111010;
     color:rgb(243, 235, 235);
@@ -107,6 +114,15 @@ body {
     opacity: 0;
     transform: translateY(46px);
 }
+}
+
+.moldura {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-image: url("../imagens/Moldura.png");
+  z-index: 20;
 }
 
 /* parallax1 */
