@@ -324,6 +324,17 @@
         <h1 class="revealUp">Introduzira-me um cubo de gelo nas costas.</h1>
     </div> 
 
+    <img id="geloGIF" src="imagens/gelo.png" style="width: 100vw;">
+    <script>
+        var imageX = document.getElementById("geloGIF");
+        imageX.addEventListener('mouseover', function(){
+        imageX.src = "imagens/gelo.gif"
+        })
+        imageX.addEventListener('mouseout', function(){
+            imageX.src = "imagens/gelo.png"
+        })
+    </script>
+
     <div class="section bg1">
         <h1 class="revealUp"> O mínimo que eu podia fazer era arrefecê-lo também.</h1>
     </div> 
