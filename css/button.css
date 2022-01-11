@@ -181,7 +181,13 @@
   z-index: 1;
 }
 
-.volume {
+.som {
+  padding: 20px;
+  margin-right: 20px;
+  float: right;
+  display: inline-block;
+}
+.som .volume {
   --line: #fff;
   --line-width: 6px;
   --duration: .5s;
@@ -189,10 +195,12 @@
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
-.volume input {
+.som .volume input {
   display: none;
+  padding: 15px;
+  margin-left: 15px;
 }
-.volume input + svg {
+.som .volume input + svg {
   display: block;
   fill: none;
   stroke: var(--line);
@@ -201,33 +209,33 @@
   stroke-width: var(--line-width);
   height: 30px;
 }
-.volume input + svg path {
+.som .volume input + svg path {
   -webkit-animation: var(--name) var(--duration) ease forwards;
           animation: var(--name) var(--duration) ease forwards;
 }
-.volume input + svg path:nth-child(2) {
+.som .volume input + svg path:nth-child(2) {
   stroke-dashoffset: 1px;
 }
-.volume input + svg path:nth-child(3) {
+.som .volume input + svg path:nth-child(3) {
   stroke-dashoffset: 1px;
 }
-.volume input:checked + svg path:nth-child(1) {
-  --name: shape;
-}
-.volume input:checked + svg path:nth-child(2) {
-  --name: small;
-}
-.volume input:checked + svg path:nth-child(3) {
-  --name: large;
-}
-.volume input:not(:checked) + svg path:nth-child(1) {
+.som .volume input:checked + svg path:nth-child(1) {
   --name: shape-r;
 }
-.volume input:not(:checked) + svg path:nth-child(2) {
+.som .volume input:checked + svg path:nth-child(2) {
   --name: small-r;
 }
-.volume input:not(:checked) + svg path:nth-child(3) {
+.som .volume input:checked + svg path:nth-child(3) {
   --name: large-r;
+}
+.som .volume input:not(:checked) + svg path:nth-child(1) {
+  --name: shape;
+}
+.som .volume input:not(:checked) + svg path:nth-child(2) {
+  --name: small;
+}
+.som .volume input:not(:checked) + svg path:nth-child(3) {
+  --name: large;
 }
 
 @-webkit-keyframes small {

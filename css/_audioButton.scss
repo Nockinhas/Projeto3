@@ -1,62 +1,71 @@
-.volume {
-    --line: #fff;
-    --line-width: 6px;
-    --duration: .5s;
-    position: relative;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    input {
-        display: none;
-        & + svg {
-            display: block;
-            fill: none;
-            stroke: var(--line);
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-width: var(--line-width);
-            height: 30px;
-            path {
-                animation: var(--name) var(--duration) ease forwards;
-                &:nth-child(2) {
-                    stroke-dashoffset: 1px;
-                }
-                &:nth-child(3) {
-                    stroke-dashoffset: 1px;
-                }
-            }
-        }
-        &:checked {
+.som{
+    padding: 20px;
+    margin-right: 20px;
+    float: right;
+    display: inline-block;
+    .volume {
+        --line: #fff;
+        --line-width: 6px;
+        --duration: .5s;
+        position: relative;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        input {
+            display: none;
+            padding: 15px;
+            margin-left: 15px;
             & + svg {
+                display: block;
+                fill: none;
+                stroke: var(--line);
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: var(--line-width);
+                height: 30px;
                 path {
-                    &:nth-child(1) {
-                        --name: shape;
-                    }
+                    animation: var(--name) var(--duration) ease forwards;
                     &:nth-child(2) {
-                        --name: small;
+                        stroke-dashoffset: 1px;
                     }
                     &:nth-child(3) {
-                        --name: large;
+                        stroke-dashoffset: 1px;
                     }
                 }
             }
-        }
-        &:not(:checked) {
-            & + svg {
-                path {
-                    &:nth-child(1) {
-                        --name: shape-r;
+            &:checked {
+                & + svg {
+                    path {
+                        &:nth-child(1) {
+                            --name: shape-r;
+                        }
+                        &:nth-child(2) {
+                            --name: small-r;
+                        }
+                        &:nth-child(3) {
+                            --name: large-r;
+                        }
                     }
-                    &:nth-child(2) {
-                        --name: small-r;
-                    }
-                    &:nth-child(3) {
-                        --name: large-r;
+                }
+            }
+            &:not(:checked) {
+                & + svg {
+                    path {
+                        &:nth-child(1) {
+                            --name: shape;
+                        }
+                        &:nth-child(2) {
+                            --name: small;
+                        }
+                        &:nth-child(3) {
+                            --name: large;
+                        }
                     }
                 }
             }
         }
     }
 }
+
 
 @keyframes small {
     0%,
