@@ -108,14 +108,18 @@ body {
 }
 }
 
-/* parallax */
-.keyart, .keyart_layer {
+/* parallax1 */
+.keyart1, .keyart_layer {
 	height: 1400px;
+}
+/* parallax2*/
+.keyart, .keyart_layer {
+	height: 1000px;
 }
 #parallax {
 	display: block;
 }
-.keyart {
+.keyart1, .keyart  {
 	position: relative;
 	z-index: 10;
 }
@@ -125,6 +129,8 @@ body {
 	width: 100%;
 	position: absolute;
 }
+
+  /* barbearia */
 	#barbearia {
 		background-image: url("../imagens/parallax/barbearia.png");
 	}
@@ -142,4 +148,108 @@ body {
 	}
 	#chao {
 		background-image: url("../imagens/parallax/ground.png");
+	}
+
+  /* estrada */
+  #paisagem {
+		background-image: url('../imagens/parallax/paisagem.png');
+	}
+	#ghoast {
+		background-image: url('../imagens/parallax/ghoast.png');
+	}
+  #arvores {
+		background-image: url('../imagens/parallax/arvores.png');
+	}
+	#fundo {
+		background-image: url('../imagens/parallax/fundo.png');
+	}
+  #estrada {
+		background-image: url('../imagens/parallax/estrada.png');
+	}
+
+   /* conhaque */
+  #sala {
+		background-image: url('../imagens/parallax/sala.png');
+	}
+	#vitimas {
+		background-image: url('../imagens/parallax/vitimas.png');
+	}
+  #mesa {
+		background-image: url('../imagens/parallax/mesa.png');
+	}
+  #candeeiros {
+		background-image: url('../imagens/parallax/candeeiros.png');
+	}
+
+  /* parque */
+  #arvores2 {
+		background-image: url('../imagens/parallax/arvores2.png');
+	}
+	#arbusto {
+		background-image: url('../imagens/parallax/arbusto.png');
+	}
+  #cadeira {
+		background-image: url('../imagens/parallax/cadeira.png');
+	}
+  #parque1 {
+		background-image: url('../imagens/parallax/parque1.png');
+	}
+  #parque2 {
+		background-image: url('../imagens/parallax/parque2.png');
+	}
+  #parque3 {
+		background-image: url('../imagens/parallax/parque3.png');
+	}
+
+   /* veneno */
+  #montanhas {
+		background-image: url('../imagens/parallax/montanhas.png');
+	}
+	#frascos {
+		background-image: url('../imagens/parallax/frascos.png');
+	}
+  #vitima2 {
+		background-image: url('../imagens/parallax/vitima2.png');
+	}
+  #assassino {
+		background-image: url('../imagens/parallax/assassino.png');
+	}
+
+   /* escritorio */
+   #escritorio {
+		background-image: url('../imagens/parallax/escritorio.png');
+	}
+	#luzes {
+		background-image: url('../imagens/parallax/luzes.png');
+	}
+  #cadeiraMaior {
+		background-image: url('../imagens/parallax/cadeira\ maior.png');
+	}
+  #mobilia {
+		background-image: url('../imagens/parallax/mobilia.png');
+	}
+  #ort {
+		background-image: url('../imagens/parallax/ort.png');
+	}
+  #dir {
+		background-image: url('../imagens/parallax/dir.png');
+	}
+  #ass {
+		background-image: url('../imagens/parallax/ass.png');
+	}
+
+   /* frigorifico */
+  #frigorifico {
+		background-image: url('../imagens/parallax/frigorifico.png');
+	}
+	#ass2 {
+		background-image: url('../imagens/parallax/ass2.png');
+	}
+  
+   /* costureiro */
+  #rua {
+		background-image: url('../imagens/parallax/rua.png');
+	}
+	#carro {
+		background-image: url('../imagens/parallax/carro.png');
 	}
