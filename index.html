@@ -14,61 +14,65 @@
         <source src="som/Casa.mp3" type="audio/mpeg">
     </audio>
 
-    <div class="header">
-        <nav class="navbar">
-            <a class="brand" href="index.html">Crimes Exemplares</a>
-            <a class="home">
-                <!-- SOM -->
-            
-                <div class="som">
-                    <label class="volume" onClick="togglePlay()">
-                        <input type="checkbox">
-                        <svg viewBox="0 0 108 96">
-                            <path d="M7,28 L35,28 L35,28 L59,8 L59,88 L35,68 L7,68 C4.790861,68 3,66.209139 3,64 L3,32 C3,29.790861 4.790861,28 7,28 Z"></path>
-                            <path d="M79,62 C83,57.3333333 85,52.6666667 85,48 C85,43.3333333 83,38.6666667 79,34 L49,3"></path>
-                            <path d="M95,69 C101.666667,61.6666667 105,54.3333333 105,47 C105,39.6666667 101.666667,32.3333333 95,25 L75.5,6 L49,33"></path>
-                        </svg>
-                    </label>
-                </div>
-            </a>
-        </nav>
+    <h1 id="message">Este site só é suportado em formato desktop! :)</h1>
 
-        <div class="scrollmenu">
-            <a href="crimes.html#story1">1.</a>
-            <a href="crimes.html#story2">2.</a>
-            <a href="crimes.html#story3">3.</a>
-            <a href="crimes.html#story4">4.</a>
-            <a href="crimes.html#story5">5.</a>
-            <a href="crimes.html#story6">6.</a>
-            <a href="crimes.html#story7">7.</a>  
-            <a href="crimes.html#story8">8.</a>
-            <a href="autores.html">Autores.</a>
+    <div class="desktop">
+        <div class="header">
+            <nav class="navbar">
+                <a class="brand" href="index.html">Crimes Exemplares</a>
+                <a class="home">
+                    <!-- SOM -->
+                
+                    <div class="som">
+                        <label class="volume" onClick="togglePlay()">
+                            <input type="checkbox">
+                            <svg viewBox="0 0 108 96">
+                                <path d="M7,28 L35,28 L35,28 L59,8 L59,88 L35,68 L7,68 C4.790861,68 3,66.209139 3,64 L3,32 C3,29.790861 4.790861,28 7,28 Z"></path>
+                                <path d="M79,62 C83,57.3333333 85,52.6666667 85,48 C85,43.3333333 83,38.6666667 79,34 L49,3"></path>
+                                <path d="M95,69 C101.666667,61.6666667 105,54.3333333 105,47 C105,39.6666667 101.666667,32.3333333 95,25 L75.5,6 L49,33"></path>
+                            </svg>
+                        </label>
+                    </div>
+                </a>
+            </nav>
+
+            <div class="scrollmenu">
+                <a href="crimes.html#story1">1.</a>
+                <a href="crimes.html#story2">2.</a>
+                <a href="crimes.html#story3">3.</a>
+                <a href="crimes.html#story4">4.</a>
+                <a href="crimes.html#story5">5.</a>
+                <a href="crimes.html#story6">6.</a>
+                <a href="crimes.html#story7">7.</a>  
+                <a href="crimes.html#story8">8.</a>
+                <a href="autores.html">Autores.</a>
+            </div>
         </div>
-    </div>
 
-    <div>
-        <img id="CaveiraGIF" src="imagens/Caveira.png" style="width: 70vw;top: 200px;display: block;margin-left: auto;margin-right: auto;width: 50%;">
-        <script>
-            var imageCaveira = document.getElementById("CaveiraGIF");
-            imageCaveira.addEventListener('mouseover', function(){
-            imageCaveira.src = "imagens/Caveira.gif"
-            })
-            imageCaveira.addEventListener('mouseout', function(){
-                imageCaveira.src = "imagens/Caveira.png"
-            })
-        </script>
-    </div>
+        <div>
+            <img id="CaveiraGIF" src="imagens/Caveira.png" style="width: 70vw;top: 200px;display: block;margin-left: auto;margin-right: auto;width: 50%;">
+            <script>
+                var imageCaveira = document.getElementById("CaveiraGIF");
+                imageCaveira.addEventListener('mouseover', function(){
+                imageCaveira.src = "imagens/Caveira.gif"
+                })
+                imageCaveira.addEventListener('mouseout', function(){
+                    imageCaveira.src = "imagens/Caveira.png"
+                })
+            </script>
+        </div>
 
-    <div class="section bg1">
-        <h1 class="revealUp">Este site é mais imersivo com música,<br>clica no icon do som!</h1>
-    </div>
+        <div class="section bg1">
+            <h1 class="revealUp">Este site é mais imersivo com música,<br>clica no icon do som!</h1>
+        </div>
 
-    <div>
-        <a href="crimes.html" style="text-decoration: none;"><button class="button">Começar</button></a>
-    </div>
+        <div>
+            <a href="crimes.html" style="text-decoration: none;"><button class="button">Começar</button></a>
+        </div>
 
-    <br><br><br><br><br>
-    <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+    </div>
 
     <script src="js/audio.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
